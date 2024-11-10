@@ -23,7 +23,7 @@ const Hero = () => {
         ></div>
 
         {/* Right Side: Text centered */}
-        <div className="flex-1 flex justify-center items-center text-[80px] sm:text-[100px] font-bold leading-tight text-white text-center">
+        <div className="flex-1 flex justify-center items-center text-[80px] sm:text-[100px] font-bold leading-tight text-white text-center" data-aos="zoom-in-up">
           <div>
             <p>Muhib</p>
             <p>Anwar</p>
