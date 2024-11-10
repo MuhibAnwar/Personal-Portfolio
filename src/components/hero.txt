@@ -1,0 +1,42 @@
+import React from 'react';
+import Navbar from './Navbar';
+
+const Hero = () => {
+  return (
+    <div
+      id="hero"
+      className="min-h-screen bg-no-repeat bg-[url('/KM2.jpg')] bg-left lg:bg-[15%] bg-cover"
+      style={{ backgroundSize: '25%' }}  // Keeps the background size as per your original style
+    >
+      <Navbar />
+      <div className="container h-[calc(100vh-60px)] flex items-center justify-center">
+        <div className="text-center text-white font-extrabold leading-tight">
+          <p
+            className="text-[80px] sm:text-[100px] md:text-[120px] font-extrabold leading-tight"
+            data-aos="zoom-in-up"
+            style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)' }}
+          >
+            Muhib Anwar
+          </p>
+          <p
+            className="text-[40px] sm:text-[50px] md:text-[60px] font-semibold"
+            data-aos="zoom-in-up"
+            style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)' }}
+          >
+            Here
+          </p>
+
+          {/* Optional Button or Call-to-Action */}
+          <a
+            href="#about"
+            className="mt-8 inline-block text-xl sm:text-2xl px-8 py-3 bg-accent text-white rounded-full shadow-lg hover:bg-accent-dark transition duration-300"
+          >
+            Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Hero;
